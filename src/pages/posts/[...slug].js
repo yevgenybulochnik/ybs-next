@@ -1,5 +1,5 @@
-import { getAllSlugs, getPost } from 'lib/api'
-import { markdownToHtml } from 'lib/markdownToHtml'
+import { getAllSlugs, getPost } from 'src/lib/api'
+import { markdownToHtml } from 'src/lib/markdownToHtml'
 
 function Post(post) {
   return (
