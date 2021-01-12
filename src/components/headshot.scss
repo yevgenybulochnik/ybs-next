@@ -1,0 +1,16 @@
+@import 'src/vars.scss';
+
+.head-shot {
+  text-align: center;
+  .creds {
+    border-top: solid 1px lightgrey;
+    text-align: left;
+    margin-top: 1em;
+    .name {
+      margin: 0.5em 0 0 0;
+    }
+    .credentials {
+      margin-top: 0;
+    }
+  }
+}

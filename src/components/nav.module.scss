@@ -1,0 +1,18 @@
+.nav {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include respond-to(tablet) {
+    display: inline-flex;
+  }
+}
+
+.mobile-button {
+  @include respond-to(tablet) {
+    display: none;
+  }
+}
