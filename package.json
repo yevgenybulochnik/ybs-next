@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.36.0",
     "@mapbox/rehype-prism": "^0.5.0",
     "gray-matter": "^4.0.2",
     "next": "10.0.4",
@@ -18,6 +19,7 @@
     "remark-gfm": "^1.0.0",
     "remark-parse": "^9.0.0",
     "remark-rehype": "^8.0.0",
+    "sass": "^1.32.2",
     "unified": "^9.2.0"
   },
   "devDependencies": {
