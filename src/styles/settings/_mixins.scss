@@ -1,0 +1,19 @@
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-ex-large: 1200px;
+
+@mixin respond-to($media) {
+  @if $media == landscape-phone {
+    @media only screen and (min-width: $break-small) { @content;  }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-medium) { @content;  }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-large) { @content;  }
+  }
+  @else if $media == lg-desktop {
+    @media only screen and (min-width: $break-ex-large) { @content;  }
+  }
+}
