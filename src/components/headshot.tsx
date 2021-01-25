@@ -1,5 +1,5 @@
 import React from 'react'
-import './headshot.scss'
+import styles from './headshot.module.scss'
 
 interface Props {
   height: string;
@@ -17,18 +17,18 @@ const Headshot: React.FC<Props> = (props) => {
   } = props
 
   return (
-    <div className='head-shot'>
+    <div className={styles.headShot}>
       <img
         height={height}
         src={src}
         alt=""
         style={{borderRadius: '50%'}}
       />
-      <div className="creds">
-        <h4 className="name">
+      <div className={styles.creds}>
+        <h4 className={styles.name}>
           {name}
         </h4>
-        <h5 className="credentials">
+        <h5 className={styles.credentials}>
           {credentials}
         </h5>
       </div>
