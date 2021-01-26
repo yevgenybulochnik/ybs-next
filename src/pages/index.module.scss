@@ -1,0 +1,56 @@
+
+.home {
+  margin: 2em;
+
+  .intro {
+    text-align: right;
+    h2 {
+      font-weight: 300;
+      em {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .introParagraph {
+    font-size: 15px;
+  }
+
+  @include respond-to(tablet) {
+    margin: 5em 0 0 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 0.5fr;
+    grid-template-rows: 12em auto auto;
+    grid-template-areas:
+      "lm sidebar intro rm"
+      "lm content content rm";
+
+    .intro {
+      grid-area: intro;
+      justify-self: center;
+      max-width: 40em;
+      min-width: 20em;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      justify-self: center;
+    }
+
+    .introParagraph {
+      grid-area: intro;
+      grid-row-start: 2;
+      padding: 0 1em;
+      font-size: 19px;
+    }
+
+    .homeContent {
+      grid-area: content;
+      grid-row-start: 3;
+      h2 {
+        border-bottom: solid 1px lightgrey;
+      }
+    }
+  }
+
+}
