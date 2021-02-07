@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "@blueprintjs/core": "^3.36.0",
