@@ -17,8 +17,21 @@ describe('Given a content dir, return content obj', () => {
 
   topics.forEach((topic) => {
     test(`${topic} should have 2 articles and 2 projects`, () => {
-      expect(content[topic].articles).toEqual(['article1', 'article2' ])
-      expect(content[topic].projects).toEqual(['project1', 'project2'])
+      expect(content[topic].articles).toHaveLength(2)
+      expect(content[topic].projects).toHaveLength(2)
+    })
+    test(`${topic} article1 and project1 should properties file_name, file_path`, () => {
+      const objKeys = [
+        'file_name',
+        'file_path'
+      ]
+
+      const article1 = content[topic].articles[0]
+      const project1 = content[topic].projects[0]
+
+      expect(Object.keys(article1)).toEqual(objKeys)
+      expect(Object.keys(project1)).toEqual(objKeys)
+
     })
   })
 
