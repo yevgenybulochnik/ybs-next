@@ -23,7 +23,8 @@ describe('Given a content dir, return content obj', () => {
     test(`${topic} article1 and project1 should properties file_name, file_path`, () => {
       const objKeys = [
         'file_name',
-        'file_path'
+        'file_path',
+        'data'
       ]
 
       const article1 = content[topic].articles[0]
