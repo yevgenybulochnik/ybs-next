@@ -1,44 +1,45 @@
 
-.workslist {
-  .work-card {
-    margin-bottom: 1em;
-    padding: 0;
-    border: none !important;
-  }
-
-  .placeholder {
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    background-color: #d3d3d31a;
-    border-radius: 10px;
-  }
-
-  .card-content {
-    display: flex;
-  }
-
-  .card-image {
-    display: none;
-    width: 300px;
-  }
-
-  .card-text {
-    margin: 1em;
-
-    .tag {
-      margin: 2px;
-    }
-
-    h4 {
-      margin-top: 0;
-    }
-  }
+.container {
 
   @include respond-to(tablet) {
     .card-image {
       display: block;
     }
+  }
+}
+
+.workCard {
+  margin-bottom: 1em;
+  padding: 0;
+  border: none !important;
+}
+
+.placeholder {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d3d31a;
+  border-radius: 10px;
+}
+
+.cardContent {
+  display: flex;
+}
+
+.cardImage {
+  display: none;
+  width: 300px;
+}
+
+.cardText {
+  margin: 1em;
+
+  .tag {
+    margin: 2px;
+  }
+
+  h4 {
+    margin-top: 0;
   }
 }
