@@ -3,23 +3,17 @@ import WorksList from 'src/components/workslist'
 import { genContentObj } from 'src/lib/api'
 
 
-function ProgrammingSummary(props) {
-  const adjArticles = props.topic.articles.map((article) => {
-    return { ...article.data }
-  })
-  const adjProjects = props.topic.projects.map((project) => {
-    return { ...project.data }
-  })
+function ProgrammingSummary({topic}) {
   return (
     <div>
       <WorksList
         title='Articles'
-        works={adjArticles}
+        works={topic.articles}
         rootPath='/posts/programming/article'
       />
       <WorksList
         title='Projects'
-        works={adjProjects}
+        works={topic.projects}
         rootPath='/posts/programming/projects'
       />
     </div>
@@ -27,10 +21,13 @@ function ProgrammingSummary(props) {
 }
 
 export async function getStaticProps() {
-  const content = genContentObj()
+  const { programming }= genContentObj()
   return {
     props: {
-      topic: content.programming
+      topic: {
+        articles: programming.articles.map((article) => {return {...article.data}}),
+        projects: programming.projects.map((project) => {return {...project.data}}),
+      }
     }
   }
 }
