@@ -7,3 +7,4 @@ This project is a port of my current react-static website yevgenybulochnik.com. 
 - Typescript
 - Blueprintjs
 - Unified
+- Remark
