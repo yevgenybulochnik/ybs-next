@@ -14,7 +14,7 @@ function ProgrammingSummary({topic}) {
       <WorksList
         title='Projects'
         works={topic.projects}
-        rootPath='/posts/programming/projects'
+        rootPath='/posts/programming/project'
       />
     </div>
   )
