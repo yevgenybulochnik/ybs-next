@@ -10,8 +10,6 @@ function Post(post) {
       <Head>
         <title>will this title work</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-solarizedlight.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-        <script dangerouslySetInnerHTML={{__html: 'mermaid.initialize({startOnLoad: true})'}}></script>
       </Head>
       <div className={styles.post} dangerouslySetInnerHTML={{__html: post.content}} />
     </div>
