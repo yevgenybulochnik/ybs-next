@@ -4,8 +4,8 @@ type: article
 topic: programming
 slug: mermaidjs
 desc: Mermaid js, markdown and more 
-published: 01-29-2021  
-updated: 01-29-2021
+published:
+updated:
 tags:
     - Markdown
     - Mermaidjs
