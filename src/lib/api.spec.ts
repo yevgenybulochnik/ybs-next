@@ -4,7 +4,7 @@ import {
 } from './api'
 
 test('Given a dir path, output all files recursively', () => {
-  expect(walk('src/lib/testcontent')).toHaveLength(8)
+  expect(walk('src/lib/testcontent')).toHaveLength(9)
 })
 
 describe('Given a content dir, return content obj', () => {

@@ -68,6 +68,10 @@ export function genContentObj(dir=contentDir): ContentObj {
     const file = fs.readFileSync(file_path, 'utf-8')
     const { data } = matter(file)
 
+    if (!data.published) {
+      return acc
+    }
+
     acc[cur.topic] = acc[cur.topic] || {projects: [], articles: []}
     if (cur.type === 'article') {
       acc[cur.topic]['articles'].push({file_name, file_path, data})
