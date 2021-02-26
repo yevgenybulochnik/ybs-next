@@ -16,15 +16,10 @@ This article serves as a living document for various Linux commands. It is conti
 
 - Get count of files in a directory
 ```bash
-ls | wc -l
-ls -a | wc -l
-ls -A | wc -l
+ls | wc -l      # --lines
+ls -a | wc -l   # --all --lines
+ls -A | wc -l   # --almost-all --lines
 ```
-    - Flags
-        - -a, --all
-        - -A, --almost-all
-        - -l, --lines
-
 
 - Get count of specific file type in a directory
 ```bash
