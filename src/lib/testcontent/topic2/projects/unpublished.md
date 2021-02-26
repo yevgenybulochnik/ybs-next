@@ -1,10 +1,10 @@
 ---
-title: Some project1
+title: Some unpublished project
 type: project
 topic: topic2
-slug: project1
-desc:  project1 description
-published: 9-17-2020
+slug: project3
+desc:  project3 description
+published:
 updated: 10-05-2020
 tags:
     - Linux
